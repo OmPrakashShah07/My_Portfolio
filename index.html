@@ -4,16 +4,22 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Om Prakash Shah | Portfolio</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
-  <header>
-    <div>
-      <a href="#home">
+  <!-- ===== HEADER ===== -->
+  <header class="site-header">
+    <div class="header-inner container">
+      <a href="#home" class="logo">
         <img src="images/logo.png" alt="Logo" width="50">
         Om Prakash
       </a>
-      <nav>
+      <nav class="main-nav">
         <ul>
           <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
@@ -24,128 +30,129 @@
     </div>
   </header>
 
-  <section id="home">
-    <div>
-      <div>
-        <p>Hello, I'm</p>
-        <h1>Om Prakash Shah</h1>
-        <h2>Web Developer &amp; Designer</h2>
-        <p>I build modern, responsive, and user-friendly websites with clean code and great design.</p>
-        <div>
-          <a href="#contact">Get In Touch</a>
-          <a href="images/Om Prakash Shah CV.pdf" target="_blank">Download CV</a>
+  <!-- ===== HERO SECTION ===== -->
+  <section class="hero" id="home">
+    <div class="hero-content container">
+      <div class="hero-text">
+        <p class="hero-greeting">Hello, I'm</p>
+        <h1 class="hero-name">Om Prakash Shah</h1>
+        <h2 class="hero-title">Web Developer &amp; Designer</h2>
+        <p class="hero-description">I build modern, responsive, and user-friendly websites with clean code and great design.</p>
+        <div class="hero-buttons">
+          <a href="#contact" class="btn btn-primary">Get In Touch</a>
+          <a href="images/CV.pdf" target="_blank" class="btn btn-secondary">Download CV</a>
         </div>
-        <div>
-          <a href="https://github.com/OmPrakashShah07" target="_blank" rel="noopener" aria-label="GitHub">
+        <div class="social-icons">
+          <a href="https://github.com/OmPrakashShah07" target="_blank" rel="noopener" aria-label="GitHub" class="social-icon">
             <img src="images/git.jpg" alt="GitHub" width="40" height="40">
           </a>
-          <a href="https://www.linkedin.com/in/om-prakash-shah/" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <a href="https://www.linkedin.com/in/om-prakash-shah/" target="_blank" rel="noopener" aria-label="LinkedIn" class="social-icon">
             <img src="images/linkdin.jpeg" alt="LinkedIn" width="40" height="40">
           </a>
-          <a href="https://www.facebook.com/om.prakash.shah.900191" target="_blank" rel="noopener" aria-label="Facebook">
+          <a href="https://www.facebook.com/om.prakash.shah.900191" target="_blank" rel="noopener" aria-label="Facebook" class="social-icon">
             <img src="images/facebook.png" alt="Facebook" width="40" height="40">
           </a>
-          <a href="https://www.instagram.com/prakashsahom098/" target="_blank" rel="noopener" aria-label="Instagram">
+          <a href="https://www.instagram.com/prakashsahom098/" target="_blank" rel="noopener" aria-label="Instagram" class="social-icon">
             <img src="images/instagram.jpeg" alt="Instagram" width="40" height="40">
           </a>
         </div>
       </div>
-      <div>
+      <div class="hero-image">
         <img src="images/profile.jpg" alt="Om Prakash Shah" width="350">
       </div>
     </div>
   </section>
 
-  <section id="about">
-    <div>
-      <div>
+  <!-- ===== ABOUT SECTION ===== -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="section-header">
         <h2>About Me</h2>
       </div>
-      <div>
+      <div class="about-content">
         <h3>Student &amp; Web Developer</h3>
-        <p>I am a dedicated Computer Science student with a strong interest in web development. </br>I enjoy building modern, responsive websites and applications that provide great user experiences.</p>
+        <p>I am a dedicated Computer Science student with a strong interest in web development.
+          I enjoy building modern, responsive websites and applications that provide great user experiences.</p>
         <p>Currently, I am learning Python, FastAPI, Networking, and Cyber Security to expand my skill set and become a well-rounded developer.</p>
-        <ul>
+        <ul class="about-info">
           <li><strong>Full Name:</strong> Om Prakash Shah</li>
           <li><strong>Email:</strong> prakashsahom098@gmail.com</li>
           <li><strong>Location:</strong> Nepal</li>
           <li><strong>Field:</strong> Computer Science</li>
         </ul>
       </div>
-      <div>
-        <h3>My Skills</h3>
-        <div>
-          <div><h4>HTML</h4></div>
-          <div><h4>CSS</h4></div>
-          <div><h4>JavaScript</h4></div>
-          <div><h4>Python</h4></div>
-          <div><h4>FastAPI</h4></div>
-          <div><h4>SQL</h4></div>
-          <div><h4>Git</h4></div>
-          <div><h4>Networking</h4></div>
+      <div class="skills-section">
+        <h3 class="sub-heading">My Skills</h3>
+        <div class="skills-grid">
+          <div class="skill-card"><h4>HTML</h4></div>
+          <div class="skill-card"><h4>CSS</h4></div>
+          <div class="skill-card"><h4>JavaScript</h4></div>
+          <div class="skill-card"><h4>Python</h4></div>
+          <div class="skill-card"><h4>Machine Learning</h4></div>
+          <div class="skill-card"><h4>SQL</h4></div>
+          <div class="skill-card"><h4>Git</h4></div>
+          <div class="skill-card"><h4>Networking</h4></div>
         </div>
       </div>
-      <div>
-        <h3>Education</h3>
-        <div>
-          <div>
-            <h4>Bachelor in Information Technology</h4>
-            <p>Model Institute of Technology</p>
-            <p>2024 - Present</p>
-          </div>
+      <div class="education-section">
+        <h3 class="sub-heading">Education</h3>
+        <div class="education-card">
+          <h4>Bachelor in Information Technology</h4>
+          <p class="education-institute">Model Institute of Technology</p>
+          <p class="education-year">2024 - Present</p>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="projects">
-    <div>
-      <div>
+  <!-- ===== PROJECTS SECTION ===== -->
+  <section class="projects section" id="projects">
+    <div class="container">
+      <div class="section-header">
         <h2>My Projects</h2>
       </div>
-      <div>
-        <article>
+      <div class="projects-grid">
+        <article class="project-card">
           <img src="images/project1.jpg" alt="Typing Speed Test" width="200">
-          <div>
+          <div class="project-info">
             <h3>Typing Speed Test</h3>
-            <p>Created a Python application that measures users' typing speed and accuracy </br>by calculating words per minute (WPM) and tracking typing errors in real time.</p>
-            <div>
+            <p>Created a Python application that measures users' typing speed and accuracy by calculating words per minute (WPM) and tracking typing errors in real time.</p>
+            <div class="project-tech">
               <span>Python</span>
-  
             </div>
-            <div>
-              <a href="#">View Project</a>
-              <a href="https://github.com/OmPrakashShah07/Typing-Speed-Test.git" target="_blank">GitHub</a>
+            <div class="project-buttons">
+              <a href="#" class="btn btn-primary">View Project</a>
+              <a href="https://github.com/OmPrakashShah07/Typing-Speed-Test.git" target="_blank" class="btn btn-secondary">GitHub</a>
             </div>
           </div>
         </article>
-        <article>
+        <article class="project-card">
           <img src="images/project2.jpg" alt="Diabetes Prediction Model" width="200">
-          <div>
+          <div class="project-info">
             <h3>Diabetes Prediction Model</h3>
-            <p>Built a Python-based machine learning model to predict the likelihood of </br>diabetes using patient health data and medical attributes.</p>
-            <div>
+            <p>Built a Python-based machine learning model to predict the likelihood of diabetes using patient health data and medical attributes.</p>
+            <div class="project-tech">
               <span>Python</span>
               <span>ML</span>
             </div>
-            <div>
-              <a href="https://loanpredictionrejectoraccept.streamlit.app/" target="_blank">View Project</a>
-              <a href="https://github.com/OmPrakashShah07/Diabetes-Prediction.git" target="_blank">GitHub</a>
+            <div class="project-buttons">
+              <a href="https://loanpredictionrejectoraccept.streamlit.app/" target="_blank" class="btn btn-primary">View Project</a>
+              <a href="https://github.com/OmPrakashShah07/Diabetes-Prediction.git" target="_blank" class="btn btn-secondary">GitHub</a>
             </div>
           </div>
         </article>
-        <article>
+        <article class="project-card">
           <img src="images/project3.jpg" alt="Loan Prediction Model" width="200">
-          <div>
+          <div class="project-info">
             <h3>Loan Prediction Model</h3>
-            <p>Developed a machine learning model using Python to predict loan approval based </br>on applicant details such as income, credit history, and employment status.</p>
-            <div>
+            <p>Developed a machine learning model using Python to predict loan approval based on applicant details such as income, credit history, and employment status.</p>
+            <div class="project-tech">
               <span>Python</span>
               <span>ML</span>
             </div>
-            <div>
-              <a href="https://loanpredictionrejectoraccept.streamlit.app/" target="_blank">View Project</a>
-              <a href="https://github.com/OmPrakashShah07/Loan-Prediction.git" target="_blank">GitHub</a>
+            <div class="project-buttons">
+              <a href="https://loanpredictionrejectoraccept.streamlit.app/" target="_blank" class="btn btn-primary">View Project</a>
+              <a href="https://github.com/OmPrakashShah07/Loan-Prediction.git" target="_blank" class="btn btn-secondary">GitHub</a>
             </div>
           </div>
         </article>
@@ -153,65 +160,66 @@
     </div>
   </section>
 
-  <section id="contact">
-    <div>
-      <div>
+  <!-- ===== CONTACT SECTION ===== -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="section-header">
         <h2>Get In Touch</h2>
       </div>
-      <div>
-        <div>
-          <form id="contact-form">
-            <div>
+      <div class="contact-container">
+        <div class="contact-form-wrapper">
+          <form class="contact-form" id="contact-form">
+            <div class="form-group">
               <label for="fullname">Full Name</label>
               <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
             </div>
-            <div>
+            <div class="form-group">
               <label for="email">Email</label>
               <input type="email" id="email" name="email" placeholder="Enter your email address" required>
             </div>
-            <div>
+            <div class="form-group">
               <label for="subject">Subject</label>
               <input type="text" id="subject" name="subject" placeholder="Enter subject" required>
             </div>
-            <div>
+            <div class="form-group">
               <label for="message">Message</label>
               <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
             </div>
-            <button type="submit">Send Message</button>
+            <button type="submit" class="btn btn-primary btn-block">Send Message</button>
           </form>
         </div>
-        <div>
-          <div>
-            <div>
-              <h4>Email</h4>
+        <div class="contact-info">
+          <div class="contact-item">
+            <div class="contact-item-label">Email</div>
+            <div class="contact-item-detail">
               <a href="mailto:prakashsahom098@gmail.com">prakashsahom098@gmail.com</a>
             </div>
           </div>
-          <div>
-            <div>
-              <h4>Phone</h4>
+          <div class="contact-item">
+            <div class="contact-item-label">Phone</div>
+            <div class="contact-item-detail">
               <a href="tel:+9779807835800">+977-9807835800</a>
             </div>
           </div>
-          <div>
-            <div>
-              <h4>Location</h4>
+          <div class="contact-item">
+            <div class="contact-item-label">Location</div>
+            <div class="contact-item-detail">
               <p>Nepal</p>
             </div>
           </div>
-          <div>
-            <h4>Follow Me</h4>
-            <div>
-              <a href="https://github.com/OmPrakashShah07" target="_blank" rel="noopener" aria-label="GitHub">
+          <div class="contact-social">
+            <div class="contact-item-label">Follow Me</div>
+            <div class="social-icons contact-social-icons">
+              <a href="https://github.com/OmPrakashShah07" target="_blank" rel="noopener" aria-label="GitHub" class="social-icon contact-social-icon">
                 <img src="images/git.jpg" alt="GitHub" width="36" height="36">
               </a>
-              <a href="https://www.linkedin.com/in/om-prakash-shah/" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <a href="https://www.linkedin.com/in/om-prakash-shah/" target="_blank" rel="noopener" aria-label="LinkedIn" class="social-icon contact-social-icon">
                 <img src="images/linkdin.jpeg" alt="LinkedIn" width="36" height="36">
               </a>
-              <a href="https://www.facebook.com/om.prakash.shah.900191" target="_blank" rel="noopener" aria-label="Facebook">
+              <a href="https://www.facebook.com/om.prakash.shah.900191" target="_blank" rel="noopener" aria-label="Facebook" class="social-icon contact-social-icon">
                 <img src="images/facebook.png" alt="Facebook" width="36" height="36">
               </a>
-              <a href="https://www.instagram.com/prakashsahom098/" target="_blank" rel="noopener" aria-label="Instagram">
+              <a href="https://www.instagram.com/prakashsahom098/" target="_blank" rel="noopener" aria-label="Instagram" class="social-icon contact-social-icon">
                 <img src="images/instagram.jpeg" alt="Instagram" width="36" height="36">
               </a>
             </div>
@@ -221,8 +229,9 @@
     </div>
   </section>
 
-  <footer>
-    <div>
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="container">
       <p>&copy; 2026 Om Prakash Shah. All rights reserved.</p>
       <p>Made with HTML, CSS &amp; JavaScript</p>
     </div>
