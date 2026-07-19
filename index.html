@@ -19,6 +19,12 @@
         <img src="images/logo.png" alt="Logo" width="50">
         Om Prakash
       </a>
+      <div class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation" role="button" tabindex="0">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
       <nav class="main-nav">
         <ul>
           <li><a href="#home">Home</a></li>
@@ -236,6 +242,37 @@
       <p>Made with HTML, CSS &amp; JavaScript</p>
     </div>
   </footer>
+
+  <!-- ===== MOBILE MENU SCRIPT ===== -->
+  <script>
+    (function () {
+      var toggle = document.getElementById('menu-toggle');
+      var nav = document.querySelector('.main-nav');
+      var links = nav.querySelectorAll('a');
+
+      /* Open / close the mobile menu */
+      toggle.addEventListener('click', function () {
+        toggle.classList.toggle('active');
+        nav.classList.toggle('active');
+      });
+
+      /* Close menu when any nav link is tapped */
+      links.forEach(function (link) {
+        link.addEventListener('click', function () {
+          toggle.classList.remove('active');
+          nav.classList.remove('active');
+        });
+      });
+
+      /* Also close on Escape key */
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape' && nav.classList.contains('active')) {
+          toggle.classList.remove('active');
+          nav.classList.remove('active');
+        }
+      });
+    })();
+  </script>
 
 </body>
 </html>
